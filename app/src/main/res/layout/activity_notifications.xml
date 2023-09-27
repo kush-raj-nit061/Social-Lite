@@ -352,6 +352,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="25dp"
             android:textSize="26sp"
+            app:icon="@drawable/home"
             android:textStyle="bold"
             tools:ignore="MissingConstraints" />
 
@@ -365,6 +366,7 @@
             android:layout_marginBottom="25dp"
             android:textSize="23sp"
             android:textStyle="bold"
+            app:icon="@drawable/wallet"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="111dp"
             tools:layout_editor_absoluteY="628dp" />
@@ -379,6 +381,7 @@
             android:textSize="26sp"
             android:textStyle="bold"
             android:visibility="visible"
+            app:icon="@drawable/analysis"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="211dp"
             tools:layout_editor_absoluteY="628dp"
