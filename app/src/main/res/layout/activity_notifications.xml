@@ -90,7 +90,7 @@
                     android:layout_marginTop="55dp"
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_round_white_8dp"
+                    android:background="@drawable/bg_round_red_8dp"
                     android:paddingStart="3.6dp"
                     android:paddingTop="1.9dp"
                     android:paddingEnd="3dp"
@@ -150,7 +150,7 @@
                     android:layout_marginTop="55dp"
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_round_white_8dp"
+                    android:background="@drawable/bg_round_red_8dp"
                     android:paddingStart="3.6dp"
                     android:paddingTop="1.9dp"
                     android:paddingEnd="3dp"
@@ -208,7 +208,7 @@
                     android:layout_marginTop="55dp"
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_round_white_8dp"
+                    android:background="@drawable/bg_round_red_8dp"
                     android:paddingStart="3.6dp"
                     android:paddingTop="1.9dp"
                     android:paddingEnd="3dp"
@@ -265,7 +265,7 @@
                     android:layout_marginTop="55dp"
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_round_white_8dp"
+                    android:background="@drawable/bg_round_red_8dp"
                     android:paddingStart="3.6dp"
                     android:paddingTop="1.9dp"
                     android:paddingEnd="3dp"
@@ -323,7 +323,7 @@
                     android:layout_marginTop="55dp"
                     android:layout_marginEnd="15dp"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_round_white_8dp"
+                    android:background="@drawable/bg_round_red_8dp"
                     android:paddingStart="3.6dp"
                     android:paddingTop="1.9dp"
                     android:paddingEnd="3dp"
@@ -353,6 +353,7 @@
             android:layout_marginBottom="25dp"
             android:textSize="26sp"
             app:icon="@drawable/home"
+            app:iconTint="#FFFFFF"
             android:textStyle="bold"
             tools:ignore="MissingConstraints" />
 
@@ -367,6 +368,7 @@
             android:textSize="23sp"
             android:textStyle="bold"
             app:icon="@drawable/wallet"
+            app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints"
             android:background="#1E1E1E" />
 
@@ -381,9 +383,8 @@
             android:textStyle="bold"
             android:visibility="visible"
             app:icon="@drawable/analysis"
+            app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="211dp"
-            tools:layout_editor_absoluteY="628dp"
             tools:visibility="visible" />
 
         <Button
@@ -394,13 +395,11 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="25dp"
-            android:textSize="40sp"
+            android:textSize="26sp"
             android:textStyle="bold"
             app:icon="@drawable/person"
-            app:iconTint="#7A3CE7"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="311dp"
-            tools:layout_editor_absoluteY="628dp" />
+            app:iconTint="#FFFFFF"
+            tools:ignore="MissingConstraints" />
 
 
     </LinearLayout>
