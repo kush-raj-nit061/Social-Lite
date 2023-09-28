@@ -2,4 +2,5 @@
     <string name="app_name">Social Lite</string>
     <string name="notifications">Notifications</string>
     <string name="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint</string>
+    <string name="see_all"><u>See All</u></string>
 </resources>

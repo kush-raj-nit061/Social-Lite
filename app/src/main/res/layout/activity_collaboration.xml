@@ -45,7 +45,7 @@
                 android:layout_width="60dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="338dp"
-                android:text="See All"
+                android:text="@string/see_all"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -152,7 +152,7 @@
                 android:layout_width="60dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="338dp"
-                android:text="See All"
+                android:text="@string/see_all"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />

@@ -58,7 +58,7 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="18dp"
-                        tools:srcCompat="@drawable/man" />
+                        android:background="@drawable/man" />
 
                     <LinearLayout
                         android:layout_width="230dp"
@@ -117,7 +117,7 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="18dp"
-                        tools:srcCompat="@drawable/woman" />
+                        android:background="@drawable/woman" />
 
                     <LinearLayout
                         android:layout_width="230dp"
@@ -176,7 +176,7 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="18dp"
-                        tools:srcCompat="@drawable/man" />
+                        android:background="@drawable/man" />
 
                     <LinearLayout
                         android:layout_width="230dp"
@@ -234,7 +234,7 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="18dp"
-                        tools:srcCompat="@drawable/woman" />
+                        android:background="@drawable/woman" />
 
                     <LinearLayout
                         android:layout_width="230dp"
@@ -292,7 +292,7 @@
                         android:layout_height="70dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="18dp"
-                        tools:srcCompat="@drawable/man" />
+                        android:background="@drawable/man" />
 
                     <LinearLayout
                         android:layout_width="230dp"
