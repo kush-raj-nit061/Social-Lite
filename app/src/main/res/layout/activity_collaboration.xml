@@ -1,9 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CollaborationActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CollaborationActivity"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#A9E0C5"
+android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<LinearLayout
+    android:layout_width="410dp"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtCollaboration"
+        android:layout_width="345sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/inika"
+        android:text="Your Collaboration"
+        android:textColor="@color/common_gray"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="412dp"
+    android:layout_height="650dp"
+    android:orientation="vertical">
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="412dp"
+    android:layout_height="90dp"
+    android:layout_marginBottom="40dp"
+    android:background="#1E1E1E"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnZero"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="26sp"
+        app:icon="@drawable/home"
+        app:iconTint="#FFFFFF"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnDzero"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:icon="@drawable/wallet"
+        app:iconTint="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        android:background="#1E1E1E" />
+
+    <Button
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:icon="@drawable/analysis"
+        app:iconTint="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnEqual"
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:icon="@drawable/person"
+        app:iconTint="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
+</LinearLayout>
