@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="410dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal">
 
     <TextView
@@ -29,112 +29,227 @@
 
     </LinearLayout>
 
-    <LinearLayout
+
+    <ScrollView
         android:layout_width="412dp"
-        android:layout_height="650dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="280dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/bg_shadow_8dp"
-            android:orientation="vertical">
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/bg_round_white_8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-
-            <ImageView
-                android:id="@+id/imgV_clb1"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:alpha=".75"
-                android:background="#FEE897F7"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_tag" />
-
-            <View
-                android:id="@+id/txt_coll1"
-                style="@style/divider"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_desc" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@color/white">
-
-
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
 
         <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="280dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/bg_shadow_8dp"
+            android:layout_width="412dp"
+            android:layout_height="650dp"
             android:orientation="vertical">
 
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/bg_round_white_8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="338dp"
+                android:text="See All"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_shadow_8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/likeHeart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/imgV_clb1"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="@dimen/btn_corner_radius"
+                    android:background="@drawable/heart" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bg_round_white_8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
-            <ImageView
-                android:id="@+id/imgv_title"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:alpha=".75"
-                android:background="#FEE897F7"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_tag" />
+                <ImageView
+                    android:id="@+id/imgV_clb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:alpha=".75"
+                    android:background="#FEE897F7"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
 
-            <View
-                android:id="@+id/divider"
-                style="@style/divider"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/imgV_clb1"
+                    android:background="@color/white">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@color/white">
+                    <TextView
+                        android:id="@+id/txtCollName1"
+                        android:layout_width="149dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:text="Natvansh"
+                        android:textSize="21dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/txtCollCourseName1"
+                        android:layout_width="149dp"
+                        android:layout_height="35dp"
+                        android:paddingStart="5dp"
+                        android:text="Content creater"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/txtCollName1"
+                        android:layout_marginStart="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtCollCourseDetail"
+                        android:layout_width="73dp"
+                        android:layout_height="25dp"
+                        android:paddingStart="5dp"
+                        android:text="ELIGIBLE"
+                        android:textColor="#33BF27"
+                        android:background="@drawable/round_green"
+                        android:textSize="15sp"
+                        android:paddingTop="2dp"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="42sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/txtCollCourseDescription"
+                        android:layout_width="240dp"
+                        android:layout_height="35dp"
+                        android:paddingStart="5dp"
+                        android:text="@string/content"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txtCollCourseName1"
+                        android:layout_marginStart="15dp"
+                        tools:ignore="RtlSymmetry" />
 
 
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="338dp"
+                android:text="See All"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_shadow_8dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/likeHeart1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="@dimen/btn_corner_radius"
+                    android:background="@drawable/heart" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/bg_round_white_8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
+                <ImageView
+                    android:id="@+id/imgV_clb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:alpha=".75"
+                    android:background="#FEE897F7"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
 
-            </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/imgV_clb2"
+                    android:background="@color/white">
 
+                    <TextView
+                        android:id="@+id/txtCollName2"
+                        android:layout_width="149dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:text="Natvansh"
+                        android:textSize="21dp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/txtCollCourseName2"
+                        android:layout_width="149dp"
+                        android:layout_height="35dp"
+                        android:paddingStart="5dp"
+                        android:text="Content creater"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/txtCollName2"
+                        android:layout_marginStart="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtCollCourseDetail2"
+                        android:layout_width="73dp"
+                        android:layout_height="25dp"
+                        android:paddingStart="5dp"
+                        android:text="ELIGIBLE"
+                        android:textColor="#33BF27"
+                        android:background="@drawable/round_green"
+                        android:textSize="15sp"
+                        android:paddingTop="2dp"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="42sp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/txtCollCourseDescription2"
+                        android:layout_width="240dp"
+                        android:layout_height="35dp"
+                        android:paddingStart="5dp"
+                        android:text="@string/content"
+                        android:textSize="15sp"
+                        android:layout_below="@id/txtCollCourseName2"
+                        android:layout_marginStart="15dp"
+                        tools:ignore="RtlSymmetry" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
-
-
-
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="412dp"
