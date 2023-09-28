@@ -32,13 +32,13 @@
 
     <ScrollView
         android:layout_width="412dp"
-        android:layout_height="wrap_content"
+        android:layout_height="670dp"
         android:orientation="vertical">
 
 
         <LinearLayout
-            android:layout_width="412dp"
-            android:layout_height="650dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -46,6 +46,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="338dp"
                 android:text="See All"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -102,6 +103,7 @@
                         android:paddingStart="5dp"
                         android:text="Natvansh"
                         android:textSize="21dp"
+                        android:textColor="@color/black"
                         tools:ignore="RtlSymmetry" />
 
                     <TextView
@@ -112,6 +114,7 @@
                         android:text="Content creater"
                         android:textSize="20dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_below="@id/txtCollName1"
                         android:layout_marginStart="15dp" />
 
@@ -150,6 +153,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="338dp"
                 android:text="See All"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -204,6 +208,7 @@
                         android:layout_marginTop="10dp"
                         android:paddingStart="5dp"
                         android:text="Natvansh"
+                        android:textColor="@color/black"
                         android:textSize="21dp"
                         tools:ignore="RtlSymmetry" />
 
@@ -215,6 +220,7 @@
                         android:text="Content creater"
                         android:textSize="20dp"
                         android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:layout_below="@id/txtCollName2"
                         android:layout_marginStart="15dp" />
 
