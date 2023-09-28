@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".CollaborationActivity"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="#A9E0C5"
-android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9E0C5"
+    android:orientation="vertical"
+    tools:context=".CollaborationActivity">
 
-<LinearLayout
-    android:layout_width="410dp"
-    android:layout_height="100dp"
-    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
 
     <TextView
         android:id="@+id/txtCollaboration"
@@ -27,177 +27,180 @@ android:orientation="vertical">
         tools:ignore="SpUsage" />
 
 
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="412dp"
-    android:layout_height="650dp"
-    android:orientation="vertical">
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="280dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/bg_shadow_8dp"
+        android:layout_width="412dp"
+        android:layout_height="650dp"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/bg_round_white_8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageView
-            android:id="@+id/imgv_title"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:alpha=".75"
-            android:background="#FEE897F7"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_tag" />
-
-        <View
-            android:id="@+id/divider"
-            style="@style/divider"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_desc" />
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/white">
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_shadow_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_round_white_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imgV_clb1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha=".75"
+                android:background="#FEE897F7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tag" />
+
+            <View
+                android:id="@+id/txt_coll1"
+                style="@style/divider"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
 
 
 
+
+            </LinearLayout>
 
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_shadow_8dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_round_white_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imgv_title"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha=".75"
+                android:background="#FEE897F7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tag" />
+
+            <View
+                android:id="@+id/divider"
+                style="@style/divider"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="280dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/bg_shadow_8dp"
-        android:orientation="vertical">
+        android:layout_width="412dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="40dp"
+        android:background="#1E1E1E"
+        android:orientation="horizontal">
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/bg_round_white_8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:icon="@drawable/home"
+            app:iconTint="#FFFFFF"
+            tools:ignore="MissingConstraints" />
 
+        <Button
+            android:id="@+id/btnDzero"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="#1E1E1E"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:icon="@drawable/wallet"
+            app:iconTint="#FFFFFF"
+            tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/imgv_title"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:alpha=".75"
-            android:background="#FEE897F7"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_tag" />
+        <Button
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:icon="@drawable/analysis"
+            app:iconTint="#FFFFFF"
+            tools:ignore="MissingConstraints"
+            tools:visibility="visible" />
 
-        <View
-            android:id="@+id/divider"
-            style="@style/divider"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_desc" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/white">
-
-
-
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:icon="@drawable/person"
+            app:iconTint="#FFFFFF"
+            tools:ignore="MissingConstraints" />
 
 
     </LinearLayout>
-
-
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="412dp"
-    android:layout_height="90dp"
-    android:layout_marginBottom="40dp"
-    android:background="#1E1E1E"
-    android:orientation="horizontal">
-
-    <Button
-        android:id="@+id/btnZero"
-        android:layout_width="75sp"
-        android:layout_height="75sp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="25dp"
-        android:textSize="26sp"
-        app:icon="@drawable/home"
-        app:iconTint="#FFFFFF"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/btnDzero"
-        android:layout_width="75sp"
-        android:layout_height="75sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="25dp"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:icon="@drawable/wallet"
-        app:iconTint="#FFFFFF"
-        tools:ignore="MissingConstraints"
-        android:background="#1E1E1E" />
-
-    <Button
-        android:layout_width="75sp"
-        android:layout_height="75sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="25dp"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:icon="@drawable/analysis"
-        app:iconTint="#FFFFFF"
-        tools:ignore="MissingConstraints"
-        tools:visibility="visible" />
-
-    <Button
-        android:id="@+id/btnEqual"
-        android:layout_width="75sp"
-        android:layout_height="75sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="25dp"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        app:icon="@drawable/person"
-        app:iconTint="#FFFFFF"
-        tools:ignore="MissingConstraints" />
-
-
-</LinearLayout>
 </LinearLayout>
