@@ -8,20 +8,20 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="410dp"
-        android:layout_height="180dp"
+        android:layout_width="410dip"
+        android:layout_height="180dip"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txtNotifications"
             android:layout_width="245sp"
             android:layout_height="65sp"
-            android:layout_marginStart="90dp"
+            android:layout_marginStart="90dip"
             android:layout_marginTop="75sp"
             android:fontFamily="cursive"
             android:text="@string/notifications"
             android:textColor="@color/common_gray"
-            android:textSize="50dp"
+            android:textSize="50dip"
             android:textStyle="bold"
             tools:ignore="SpUsage" />
 
@@ -29,8 +29,8 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="569dp"
+        android:layout_width="412dip"
+        android:layout_height="569dip"
         android:orientation="vertical">
 
 
@@ -38,10 +38,10 @@
         <ScrollView
 
             android:layout_width="match_parent"
-            android:layout_height="540dp"
-            android:layout_marginStart="40dp"
+            android:layout_height="540dip"
+            android:layout_marginStart="40dip"
             android:layout_marginTop="7sp"
-            android:layout_marginEnd="35dp">
+            android:layout_marginEnd="35dip">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,39 +49,40 @@
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="108dp"
+                    android:layout_height="108dip"
                     android:orientation="horizontal">
 
                     <ImageView
                         android:id="@+id/imageView1"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="18dp"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_marginStart="8dip"
+                        android:layout_marginTop="18dip"
+
                         android:background="@drawable/man" />
 
                     <LinearLayout
-                        android:layout_width="230dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_width="230dip"
+                        android:layout_height="80dip"
+                        android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage1"
-                            android:layout_width="225dp"
+                            android:layout_width="225dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
                             android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
                             android:textColor="#000000"
                             android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo1"
-                            android:layout_width="80dp"
+                            android:layout_width="80dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="5dip"
                             android:fontFamily="serif"
                             android:text="1 min ago."
                             android:textColor="#666565"
@@ -92,15 +93,15 @@
 
                     <TextView
                         android:id="@+id/txtRedNot1"
-                        android:layout_width="0dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="55dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_width="0dip"
+                        android:layout_height="18dip"
+                        android:layout_marginTop="55dip"
+                        android:layout_marginEnd="15dip"
                         android:layout_weight="1"
                         android:background="@drawable/bg_round_red_8dp"
-                        android:paddingStart="3.6dp"
-                        android:paddingTop="1.9dp"
-                        android:paddingEnd="3dp"
+                        android:paddingStart="3.6dip"
+                        android:paddingTop="1.9dip"
+                        android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -109,38 +110,38 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="108dp"
+                    android:layout_height="108dip"
                     android:orientation="horizontal">
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="18dp"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_marginStart="8dip"
+                        android:layout_marginTop="18dip"
                         android:background="@drawable/woman" />
 
                     <LinearLayout
-                        android:layout_width="230dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_width="230dip"
+                        android:layout_height="80dip"
+                        android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage2"
-                            android:layout_width="225dp"
+                            android:layout_width="225dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
                             android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
                             android:textColor="#FF000000"
                             android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo2"
-                            android:layout_width="80dp"
+                            android:layout_width="80dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="5dip"
                             android:fontFamily="serif"
                             android:text="1 min ago."
                             android:textColor="#666565"
@@ -152,15 +153,15 @@
 
                     <TextView
                         android:id="@+id/txtRedNot2"
-                        android:layout_width="0dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="55dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_width="0dip"
+                        android:layout_height="18dip"
+                        android:layout_marginTop="55dip"
+                        android:layout_marginEnd="15dip"
                         android:layout_weight="1"
                         android:background="@drawable/bg_round_red_8dp"
-                        android:paddingStart="3.6dp"
-                        android:paddingTop="1.9dp"
-                        android:paddingEnd="3dp"
+                        android:paddingStart="3.6dip"
+                        android:paddingTop="1.9dip"
+                        android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -168,38 +169,38 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="108dp"
+                    android:layout_height="108dip"
                     android:orientation="horizontal">
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="18dp"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_marginStart="8dip"
+                        android:layout_marginTop="18dip"
                         android:background="@drawable/man" />
 
                     <LinearLayout
-                        android:layout_width="230dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_width="230dip"
+                        android:layout_height="80dip"
+                        android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage3"
-                            android:layout_width="225dp"
+                            android:layout_width="225dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
                             android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
                             android:textColor="#FF000000"
                             android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo3"
-                            android:layout_width="80dp"
+                            android:layout_width="80dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="5dip"
                             android:fontFamily="serif"
                             android:text="1 min ago."
                             android:textColor="#666565"
@@ -210,15 +211,15 @@
 
                     <TextView
                         android:id="@+id/txtRedNot3"
-                        android:layout_width="0dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="55dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_width="0dip"
+                        android:layout_height="18dip"
+                        android:layout_marginTop="55dip"
+                        android:layout_marginEnd="15dip"
                         android:layout_weight="1"
                         android:background="@drawable/bg_round_red_8dp"
-                        android:paddingStart="3.6dp"
-                        android:paddingTop="1.9dp"
-                        android:paddingEnd="3dp"
+                        android:paddingStart="3.6dip"
+                        android:paddingTop="1.9dip"
+                        android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -226,38 +227,38 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="108dp"
+                    android:layout_height="108dip"
                     android:orientation="horizontal">
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="18dp"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_marginStart="8dip"
+                        android:layout_marginTop="18dip"
                         android:background="@drawable/woman" />
 
                     <LinearLayout
-                        android:layout_width="230dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_width="230dip"
+                        android:layout_height="80dip"
+                        android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage4"
-                            android:layout_width="225dp"
+                            android:layout_width="225dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
                             android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
                             android:textColor="#FF000000"
                             android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo4"
-                            android:layout_width="80dp"
+                            android:layout_width="80dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="5dip"
                             android:fontFamily="serif"
                             android:text="1 min ago."
                             android:textColor="#666565"
@@ -267,15 +268,15 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtRedNot4"
-                        android:layout_width="0dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="55dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_width="0dip"
+                        android:layout_height="18dip"
+                        android:layout_marginTop="55dip"
+                        android:layout_marginEnd="15dip"
                         android:layout_weight="1"
                         android:background="@drawable/bg_round_red_8dp"
-                        android:paddingStart="3.6dp"
-                        android:paddingTop="1.9dp"
-                        android:paddingEnd="3dp"
+                        android:paddingStart="3.6dip"
+                        android:paddingTop="1.9dip"
+                        android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -284,38 +285,38 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="108dp"
+                    android:layout_height="108dip"
                     android:orientation="horizontal">
                     <ImageView
                         android:id="@+id/imageView5"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="18dp"
+                        android:layout_width="70dip"
+                        android:layout_height="70dip"
+                        android:layout_marginStart="8dip"
+                        android:layout_marginTop="18dip"
                         android:background="@drawable/man" />
 
                     <LinearLayout
-                        android:layout_width="230dp"
-                        android:layout_height="80dp"
-                        android:layout_marginTop="12dp"
+                        android:layout_width="230dip"
+                        android:layout_height="80dip"
+                        android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage5"
-                            android:layout_width="225dp"
+                            android:layout_width="225dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
                             android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
                             android:textColor="#FF000000"
                             android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo5"
-                            android:layout_width="80dp"
+                            android:layout_width="80dip"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="5dip"
                             android:fontFamily="serif"
                             android:text="1 min ago."
                             android:textColor="#666565"
@@ -325,15 +326,15 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtRedNot5"
-                        android:layout_width="0dp"
-                        android:layout_height="18dp"
-                        android:layout_marginTop="55dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_width="0dip"
+                        android:layout_height="18dip"
+                        android:layout_marginTop="55dip"
+                        android:layout_marginEnd="15dip"
                         android:layout_weight="1"
                         android:background="@drawable/bg_round_red_8dp"
-                        android:paddingStart="3.6dp"
-                        android:paddingTop="1.9dp"
-                        android:paddingEnd="3dp"
+                        android:paddingStart="3.6dip"
+                        android:paddingTop="1.9dip"
+                        android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -346,68 +347,73 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="90dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="412dip"
+        android:layout_height="90dip"
+        android:layout_marginBottom="40dip"
         android:background="#1E1E1E"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnZero"
-            android:layout_width="75sp"
-            android:layout_height="75sp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="25dp"
+            android:id="@+id/btnHome"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:paddingStart="30dip"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="25dip"
             android:textSize="26sp"
             app:icon="@drawable/home"
             app:iconTint="#FFFFFF"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
-            android:id="@+id/btnDzero"
-            android:layout_width="75sp"
-            android:layout_height="75sp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="25dp"
+            android:id="@+id/btnWallet"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:paddingStart="30dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginStart="17dip"
+            android:layout_marginBottom="25dip"
             android:textSize="23sp"
             android:textStyle="bold"
             app:icon="@drawable/wallet"
             app:iconTint="#FFFFFF"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
-            android:layout_width="75sp"
-            android:layout_height="75sp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="25dp"
+            android:id="@+id/btnAnalysis"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginStart="17dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="25dip"
+            android:paddingStart="30dip"
             android:textSize="26sp"
             android:textStyle="bold"
             android:visibility="visible"
             app:icon="@drawable/analysis"
             app:iconTint="#FFFFFF"
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,RtlSymmetry"
             tools:visibility="visible" />
 
         <Button
-            android:id="@+id/btnEqual"
-            android:layout_width="75sp"
-            android:layout_height="75sp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginBottom="25dp"
+            android:id="@+id/btnProfile"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:paddingStart="30dip"
+            android:layout_marginStart="17dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="25dip"
             android:textSize="26sp"
             android:textStyle="bold"
             app:icon="@drawable/person"
             app:iconTint="#FFFFFF"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            style="?android:attr/buttonBarButtonStyle" />
 
 
     </LinearLayout>
