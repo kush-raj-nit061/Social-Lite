@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +9,8 @@
     tools:context=".CollaborationActivity">
 
     <LinearLayout
-        android:layout_width="410dip"
+        android:id="@+id/collHead"
+        android:layout_width="match_parent"
         android:layout_height="80dip"
         android:orientation="horizontal">
 
@@ -25,14 +26,13 @@
         android:textSize="26dip"
         android:textStyle="bold"
         tools:ignore="SpUsage" />
-
-
     </LinearLayout>
 
-
     <ScrollView
-        android:layout_width="412dip"
-        android:layout_height="685dip"
+        android:id="@+id/CollContent"
+        android:layout_width="match_parent"
+        android:layout_height="785dip"
+        android:layout_below="@+id/collHead"
         android:orientation="vertical">
 
 
@@ -102,45 +102,45 @@
                         android:layout_marginTop="10dip"
                         android:paddingStart="5dip"
                         android:text="Natvansh"
-                        android:textSize="21dip"
                         android:textColor="@color/black"
+                        android:textSize="21dip"
                         tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/txtCollCourseName1"
                         android:layout_width="149dip"
                         android:layout_height="35dip"
+                        android:layout_below="@id/txtCollName1"
+                        android:layout_marginStart="15dip"
                         android:paddingStart="5dip"
                         android:text="Content creater"
-                        android:textSize="20dip"
-                        android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:layout_below="@id/txtCollName1"
-                        android:layout_marginStart="15dip" />
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/txtCollCourseDetail"
                         android:layout_width="73dip"
                         android:layout_height="25dip"
-                        android:paddingStart="5dip"
-                        android:text="ELIGIBLE"
-                        android:textColor="#33BF27"
-                        android:background="@drawable/round_green"
-                        android:textSize="15sp"
-                        android:paddingTop="2dip"
                         android:layout_marginStart="180dip"
                         android:layout_marginTop="42sp"
+                        android:background="@drawable/round_green"
+                        android:paddingStart="5dip"
+                        android:paddingTop="2dip"
+                        android:text="ELIGIBLE"
+                        android:textColor="#33BF27"
+                        android:textSize="15sp"
                         tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/txtCollCourseDescription"
                         android:layout_width="240dip"
                         android:layout_height="35dip"
+                        android:layout_below="@id/txtCollCourseName1"
+                        android:layout_marginStart="15dip"
                         android:paddingStart="5dip"
                         android:text="@string/content"
                         android:textSize="15sp"
-                        android:layout_below="@id/txtCollCourseName1"
-                        android:layout_marginStart="15dip"
                         tools:ignore="RtlSymmetry" />
 
 
@@ -216,37 +216,37 @@
                         android:id="@+id/txtCollCourseName2"
                         android:layout_width="149dip"
                         android:layout_height="35dip"
+                        android:layout_below="@id/txtCollName2"
+                        android:layout_marginStart="15dip"
                         android:paddingStart="5dip"
                         android:text="Content creater"
-                        android:textSize="20dip"
-                        android:textStyle="bold"
                         android:textColor="@color/black"
-                        android:layout_below="@id/txtCollName2"
-                        android:layout_marginStart="15dip" />
+                        android:textSize="20dip"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/txtCollCourseDetail2"
                         android:layout_width="73dip"
                         android:layout_height="25dip"
-                        android:paddingStart="5dip"
-                        android:text="ELIGIBLE"
-                        android:textColor="#33BF27"
-                        android:background="@drawable/round_green"
-                        android:textSize="15sp"
-                        android:paddingTop="2dip"
                         android:layout_marginStart="180dip"
                         android:layout_marginTop="42sp"
+                        android:background="@drawable/round_green"
+                        android:paddingStart="5dip"
+                        android:paddingTop="2dip"
+                        android:text="ELIGIBLE"
+                        android:textColor="#33BF27"
+                        android:textSize="15sp"
                         tools:ignore="RtlSymmetry" />
 
                     <TextView
                         android:id="@+id/txtCollCourseDescription2"
                         android:layout_width="240dip"
                         android:layout_height="35dip"
+                        android:layout_below="@id/txtCollCourseName2"
+                        android:layout_marginStart="15dip"
                         android:paddingStart="5dip"
                         android:text="@string/content"
                         android:textSize="15sp"
-                        android:layout_below="@id/txtCollCourseName2"
-                        android:layout_marginStart="15dip"
                         tools:ignore="RtlSymmetry" />
 
 
@@ -256,21 +256,24 @@
 
         </LinearLayout>
     </ScrollView>
+
     <LinearLayout
-        android:layout_width="412dip"
-        android:layout_height="75dip"
-        android:layout_marginBottom="40dip"
+        android:id="@+id/CollNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="76dip"
         android:background="#1E1E1E"
+        android:layout_alignBottom="@+id/CollContent"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnHome"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:paddingStart="30dip"
             android:layout_marginStart="15dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:layout_marginBottom="25dip"
+            android:textSize="26sp"
             app:icon="@drawable/home"
             app:iconTint="#FFFFFF"
             android:textStyle="bold"
@@ -279,12 +282,13 @@
 
         <Button
             android:id="@+id/btnWallet"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:paddingStart="30dip"
             android:layout_marginStart="17dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:layout_marginBottom="25dip"
+            android:textSize="23sp"
             android:textStyle="bold"
             app:icon="@drawable/wallet"
             app:iconTint="#FFFFFF"
@@ -293,28 +297,29 @@
 
         <Button
             android:id="@+id/btnAnalysis"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
-            android:paddingStart="30dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:layout_marginStart="17dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:layout_marginBottom="25dip"
+            android:paddingStart="30dip"
+            android:textSize="26sp"
             android:textStyle="bold"
             android:visibility="visible"
             app:icon="@drawable/analysis"
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
-            tools:visibility="visible" />
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/btnProfile"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:paddingStart="30dip"
             android:layout_marginStart="17dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:layout_marginBottom="25dip"
+            android:textSize="26sp"
             android:textStyle="bold"
             app:icon="@drawable/person"
             app:iconTint="#FFFFFF"
@@ -323,4 +328,5 @@
 
 
     </LinearLayout>
-</LinearLayout>
+
+</RelativeLayout>
