@@ -35,19 +35,19 @@
         android:orientation="vertical">
 
         <ScrollView
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="40dip"
             android:layout_marginStart="35dip"
+            android:layout_marginEnd="35dip"
             android:layout_marginTop="7dp"
-            android:background="@drawable/shades_of_green"
-            android:layout_marginEnd="35dip">
+            android:layout_marginBottom="40dip"
+            android:background="@drawable/shades_of_green">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -108,7 +108,6 @@
                         android:textSize="10sp" />
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -167,7 +166,6 @@
                         android:textColor="@color/white"
                         android:textSize="10sp" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -225,7 +223,6 @@
                         android:textColor="@color/white"
                         android:textSize="10sp" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -280,10 +277,8 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"/>
                 </LinearLayout>
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -396,10 +391,6 @@
                         android:textColor="@color/white"
                         android:textSize="10sp" />
                 </LinearLayout>
-
-
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -460,7 +451,6 @@
                         android:textSize="10sp" />
 
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -519,7 +509,6 @@
                         android:textColor="@color/white"
                         android:textSize="10sp" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -575,9 +564,8 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"/>
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -632,9 +620,11 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"/>
                 </LinearLayout>
+
             </LinearLayout>
+
         </ScrollView>
     </LinearLayout>
 
