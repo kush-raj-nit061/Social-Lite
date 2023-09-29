@@ -406,7 +406,6 @@
         android:layout_width="match_parent"
         android:layout_height="76dip"
         android:background="#1E1E1E"
-        android:layout_alig="@+id/CollContent"
         android:orientation="horizontal">
 
         <Button
