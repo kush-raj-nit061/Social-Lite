@@ -35,7 +35,6 @@
         android:layout_below="@+id/collHead"
         android:orientation="vertical">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -75,9 +74,6 @@
                         android:layout_marginTop="@dimen/btn_corner_radius"
                         android:background="@drawable/heart" />
 
-
-
-
                     <ImageView
                         android:id="@+id/imgV_clb1"
                         android:layout_width="match_parent"
@@ -102,7 +98,7 @@
                             android:paddingStart="5dip"
                             android:text="Natvansh"
                             android:textColor="@color/black"
-                            android:textSize="21dip"
+                            android:textSize="21sp"
                             tools:ignore="RtlSymmetry" />
 
                         <TextView
@@ -114,8 +110,9 @@
                             android:paddingStart="5dip"
                             android:text="Content creater"
                             android:textColor="@color/black"
-                            android:textSize="20dip"
-                            android:textStyle="bold" />
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
 
                         <TextView
                             android:id="@+id/txtCollCourseDetail"
@@ -142,11 +139,8 @@
                             android:textSize="15sp"
                             tools:ignore="RtlSymmetry" />
 
-
                     </RelativeLayout>
-
                 </RelativeLayout>
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -161,7 +155,7 @@
                     android:layout_marginTop="7dp"
                     android:text="@string/see_all"
                     android:textColor="@color/black"
-                    android:textSize="16dip"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <RelativeLayout
@@ -182,9 +176,6 @@
                         android:layout_marginStart="225dip"
                         android:layout_marginTop="@dimen/btn_corner_radius"
                         android:background="@drawable/heart" />
-
-
-
 
                     <ImageView
                         android:id="@+id/imgV_clb2"
@@ -210,7 +201,7 @@
                             android:paddingStart="5dip"
                             android:text="Natvansh"
                             android:textColor="@color/black"
-                            android:textSize="21dip"
+                            android:textSize="21sp"
                             tools:ignore="RtlSymmetry" />
 
                         <TextView
@@ -222,7 +213,7 @@
                             android:paddingStart="5dip"
                             android:text="Content creater"
                             android:textColor="@color/black"
-                            android:textSize="20dip"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -250,11 +241,8 @@
                             android:textSize="15sp"
                             tools:ignore="RtlSymmetry" />
 
-
                     </RelativeLayout>
-
                 </RelativeLayout>
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -269,7 +257,7 @@
                     android:layout_marginTop="7dp"
                     android:text="@string/see_all"
                     android:textColor="@color/black"
-                    android:textSize="16dip"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <RelativeLayout
@@ -290,9 +278,6 @@
                         android:layout_marginStart="225dip"
                         android:layout_marginTop="@dimen/btn_corner_radius"
                         android:background="@drawable/heart" />
-
-
-
 
                     <ImageView
                         android:id="@+id/imgV_clb3"
@@ -318,7 +303,7 @@
                             android:paddingStart="5dip"
                             android:text="Natvansh"
                             android:textColor="@color/black"
-                            android:textSize="21dip"
+                            android:textSize="21sp"
                             tools:ignore="RtlSymmetry" />
 
                         <TextView
@@ -330,7 +315,7 @@
                             android:paddingStart="5dip"
                             android:text="Content creater"
                             android:textColor="@color/black"
-                            android:textSize="20dip"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -357,12 +342,8 @@
                             android:text="@string/content"
                             android:textSize="15sp"
                             tools:ignore="RtlSymmetry" />
-
-
                     </RelativeLayout>
-
                 </RelativeLayout>
-
             </RelativeLayout>
 
             <RelativeLayout
@@ -377,7 +358,7 @@
                     android:layout_marginTop="7dp"
                     android:text="@string/see_all"
                     android:textColor="@color/black"
-                    android:textSize="16dip"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <RelativeLayout
@@ -426,7 +407,7 @@
                             android:paddingStart="5dip"
                             android:text="Natvansh"
                             android:textColor="@color/black"
-                            android:textSize="21dip"
+                            android:textSize="21sp"
                             tools:ignore="RtlSymmetry" />
 
                         <TextView
@@ -438,7 +419,7 @@
                             android:paddingStart="5dip"
                             android:text="Content creater"
                             android:textColor="@color/black"
-                            android:textSize="20dip"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -465,12 +446,8 @@
                             android:text="@string/content"
                             android:textSize="15sp"
                             tools:ignore="RtlSymmetry" />
-
-
                     </RelativeLayout>
-
                 </RelativeLayout>
-
             </RelativeLayout>
 
         </LinearLayout>
@@ -544,7 +521,6 @@
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
             style="?android:attr/buttonBarButtonStyle" />
-
 
     </LinearLayout>
 </RelativeLayout>

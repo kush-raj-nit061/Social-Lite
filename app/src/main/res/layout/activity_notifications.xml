@@ -26,7 +26,6 @@
             android:textStyle="bold"
             tools:ignore="SpUsage" />
 
-
     </LinearLayout>
 
     <LinearLayout
@@ -105,7 +104,8 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -164,7 +164,8 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -221,8 +222,11 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -277,8 +281,10 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -333,8 +339,10 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -389,8 +397,10 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -448,9 +458,11 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -507,8 +519,10 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -564,8 +578,10 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -620,11 +636,11 @@
                         android:paddingEnd="3dip"
                         android:text="2"
                         android:textColor="@color/white"
-                        android:textSize="10sp"/>
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
                 </LinearLayout>
 
             </LinearLayout>
-
         </ScrollView>
     </LinearLayout>
 
@@ -695,7 +711,6 @@
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
             style="?android:attr/buttonBarButtonStyle" />
-
 
     </LinearLayout>
 </LinearLayout>
