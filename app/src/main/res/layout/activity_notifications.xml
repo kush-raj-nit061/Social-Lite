@@ -39,8 +39,8 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="35dip"
-            android:layout_marginEnd="35dip"
+            android:layout_marginStart="10dip"
+            android:layout_marginEnd="10dip"
             android:layout_marginTop="7dp"
             android:layout_marginBottom="99dip"
             android:background="@drawable/shades_of_green">
@@ -50,13 +50,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
 
 
-                    <de.hdodenhof.circleimageview.CircleImageView                        android:id="@+id/imageView1"
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView1"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
                         android:alpha="1"
@@ -65,20 +66,23 @@
                         android:src="@drawable/man"/>
 
                     <LinearLayout
-                        android:layout_width="230dip"
+                        android:id="@+id/txtNotiContent"
+                        android:layout_width="match_parent"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:layout_marginEnd="60dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dip"
-                        android:layout_marginTop="15dip"
-                        android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
-                        android:textColor="#FF000000"
-                        android:textStyle="bold|italic"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
+                            android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
+                            android:textColor="#FF000000"
+                            android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo1"
@@ -99,7 +103,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -108,8 +113,8 @@
                         android:textSize="10sp"
                         tools:ignore="SmallSp" />
 
-                </LinearLayout>
-                <LinearLayout
+                </RelativeLayout>
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -125,6 +130,7 @@
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
+                        android:layout_toRightOf="@+id/imageView2"
                         android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
@@ -158,7 +164,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -166,8 +173,9 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
-                <LinearLayout
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -185,6 +193,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView3"
                         android:orientation="vertical">
 
                         <TextView
@@ -216,7 +225,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                    android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -225,7 +235,7 @@
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
