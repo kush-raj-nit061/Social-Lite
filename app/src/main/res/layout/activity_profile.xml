@@ -23,6 +23,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="15dp"
             android:textSize="60sp"
+            android:textColor="@color/black"
             />
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -66,6 +67,7 @@
             android:layout_gravity="center"
             android:text="       Hello Snehal \nHow are You Today ?"
             android:padding="@dimen/text_small"
+            android:textColor="@color/black"
             android:textStyle="bold"/>
 
         <LinearLayout
@@ -94,7 +96,8 @@
                     android:layout_marginTop="3dp"
                     android:text="103"
                     android:textSize="50dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
 
 
                 <TextView
@@ -104,7 +107,8 @@
                     android:layout_below="@+id/profilePoints"
                     android:layout_centerHorizontal="true"
                     android:text="My points"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
 
 
                 <TextView
@@ -115,6 +119,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/myPoints"
+                    android:textColor="@color/black"
 
                     />
 
