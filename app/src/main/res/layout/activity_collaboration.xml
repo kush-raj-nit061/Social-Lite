@@ -31,7 +31,7 @@
     <ScrollView
         android:id="@+id/CollContent"
         android:layout_width="match_parent"
-        android:layout_height="699dip"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/collHead"
         android:orientation="vertical">
 
@@ -40,7 +40,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-                <RelativeLayout
+            <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="350dp">
 
@@ -465,6 +465,7 @@
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
             </RelativeLayout>
+
         </LinearLayout>
     </ScrollView>
 
@@ -473,7 +474,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dip"
         android:background="#1E1E1E"
-        android:layout_below="@+id/CollContent"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
         <Button
