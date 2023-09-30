@@ -86,7 +86,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="140dip"
                             android:layout_below="@+id/imgV_clb1"
-                            android:background="@drawable/bg_round_white_28dp">
+                            android:background="@drawable/bg_round_white_20dp">
 
                             <TextView
                                 android:id="@+id/txtCollName1"
@@ -188,7 +188,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="140dip"
                         android:layout_below="@+id/imgV_clb2"
-                        android:background="@drawable/bg_round_white_28dp">
+                        android:background="@drawable/bg_round_white_20dp">
 
                         <TextView
                             android:id="@+id/txtCollName2"
@@ -289,7 +289,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="140dip"
                         android:layout_below="@+id/imgV_clb3"
-                        android:background="@drawable/bg_round_white_28dp">
+                        android:background="@drawable/bg_round_white_20dp">
 
                         <TextView
                             android:id="@+id/txtCollName3"
@@ -392,7 +392,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="140dip"
                         android:layout_below="@+id/imgV_clb4"
-                        android:background="@drawable/bg_round_white_28dp">
+                        android:background="@drawable/bg_round_white_20dp">
 
                         <TextView
                             android:id="@+id/txtCollName4"
