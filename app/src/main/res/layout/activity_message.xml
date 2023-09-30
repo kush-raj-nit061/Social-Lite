@@ -281,9 +281,6 @@
                                         app:drawableStartCompat="@drawable/baseline_arrow_drop_down_24" />
 
 
-
-
-
                                 </LinearLayout>
 
 
@@ -384,15 +381,6 @@
 
 
             </LinearLayout>
-
-
-
-
-
-
-
-
-
 
 
         </RelativeLayout>
