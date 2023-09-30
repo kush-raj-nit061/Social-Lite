@@ -157,7 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -165,7 +165,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile1"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -224,7 +224,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -275,7 +275,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile2"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -283,7 +283,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -333,7 +333,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile3"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -341,7 +341,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -392,7 +392,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile4"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -400,7 +400,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -451,7 +451,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile5"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -459,7 +459,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -510,7 +510,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile6"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -518,7 +518,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -569,7 +569,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile7"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -577,7 +577,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -628,7 +628,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile8"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -636,7 +636,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -686,7 +686,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile9"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -694,7 +694,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -745,7 +745,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/ivPofile10"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
@@ -753,7 +753,7 @@
                         android:background="@drawable/circle"
                         >
 
-                    </ImageView>
+                    </de.hdodenhof.circleimageview.CircleImageView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
