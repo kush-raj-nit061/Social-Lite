@@ -31,7 +31,7 @@
     <ScrollView
         android:id="@+id/CollContent"
         android:layout_width="match_parent"
-        android:layout_height="690dip"
+        android:layout_height="699dip"
         android:layout_below="@+id/collHead"
         android:orientation="vertical">
 
