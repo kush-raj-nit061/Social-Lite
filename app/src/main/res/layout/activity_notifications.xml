@@ -68,14 +68,13 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="10dip"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginTop="15dip"
-                            android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
-                            android:textColor="#000000"
-                            android:textStyle="bold|italic" />
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dip"
+                        android:layout_marginTop="15dip"
+                        android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
+                        android:textColor="#FF000000"
+                        android:textStyle="bold|italic"/>
 
                         <TextView
                             android:id="@+id/txtTimeAgo1"
@@ -127,7 +126,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage2"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -185,7 +184,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage3"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -244,7 +243,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage4"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -301,7 +300,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage5"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -358,7 +357,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage6"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -476,7 +475,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage8"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -535,7 +534,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage9"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
@@ -593,7 +592,7 @@
 
                         <TextView
                             android:id="@+id/txtNotiMessage10"
-                            android:layout_width="225dip"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dip"
                             android:layout_marginTop="15dip"
