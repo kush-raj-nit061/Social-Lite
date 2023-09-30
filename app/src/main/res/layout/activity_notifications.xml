@@ -114,6 +114,7 @@
                         tools:ignore="SmallSp" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
@@ -226,7 +227,7 @@
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
                         android:layout_marginEnd="20dip"
-                    android:layout_alignParentEnd="true"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -237,7 +238,7 @@
 
                 </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -254,6 +255,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView4"
                         android:orientation="vertical">
 
                         <TextView
@@ -284,7 +286,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -292,9 +295,9 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -311,6 +314,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView5"
                         android:orientation="vertical">
 
                         <TextView
@@ -341,7 +345,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -349,9 +354,9 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -368,6 +373,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView6"
                         android:orientation="vertical">
 
                         <TextView
@@ -398,7 +404,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -406,9 +413,9 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -426,6 +433,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView7"
                         android:orientation="vertical">
 
                         <TextView
@@ -458,7 +466,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -467,9 +476,9 @@
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -486,6 +495,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView8"
                         android:orientation="vertical">
 
                         <TextView
@@ -518,7 +528,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -526,9 +537,9 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -545,6 +556,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView9"
                         android:orientation="vertical">
 
                         <TextView
@@ -576,7 +588,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -584,9 +597,9 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
@@ -603,6 +616,7 @@
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView10"
                         android:orientation="vertical">
 
                         <TextView
@@ -633,7 +647,8 @@
                         android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -641,7 +656,7 @@
                         android:textColor="@color/white"
                         android:textSize="10sp"
                         tools:ignore="SmallSp"/>
-                </LinearLayout>
+                </RelativeLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
