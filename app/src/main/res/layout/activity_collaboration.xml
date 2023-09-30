@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,8 +9,9 @@
     tools:context=".CollaborationActivity">
 
     <LinearLayout
-        android:layout_width="410dip"
-        android:layout_height="80dip"
+        android:id="@+id/collHead"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
         android:orientation="horizontal">
 
     <TextView
@@ -18,259 +19,453 @@
         android:layout_width="345sp"
         android:layout_height="50sp"
         android:layout_marginStart="25dip"
-        android:layout_marginTop="35dip"
+        android:layout_marginTop="30dip"
         android:fontFamily="@font/inika"
         android:text="Your Collaboration"
         android:textColor="@color/common_gray"
         android:textSize="26dip"
         android:textStyle="bold"
         tools:ignore="SpUsage" />
-
-
     </LinearLayout>
 
-
     <ScrollView
-        android:layout_width="412dip"
-        android:layout_height="685dip"
+        android:id="@+id/CollContent"
+        android:layout_width="match_parent"
+        android:layout_height="699dip"
+        android:layout_below="@+id/collHead"
         android:orientation="vertical">
-
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="60dip"
-                android:layout_height="25dip"
-                android:layout_marginStart="338dip"
-                android:text="@string/see_all"
-                android:textColor="@color/black"
-                android:textSize="16dip"
-                android:textStyle="bold" />
-
-            <RelativeLayout
-                android:layout_width="300dip"
-                android:layout_height="300dip"
-                android:layout_marginStart="30dip"
-                android:layout_marginTop="30dip"
-                android:layout_marginEnd="8dip"
-                android:background="@drawable/bg_shadow_8dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/likeHeart"
-                    android:layout_width="30dip"
-                    android:layout_height="30dip"
-                    android:layout_alignStart="@+id/imgV_clb1"
-                    android:layout_marginVertical="15dip"
-                    android:layout_marginStart="225dip"
-                    android:layout_marginTop="@dimen/btn_corner_radius"
-                    android:background="@drawable/heart" />
-
-                <View
-                    android:layout_width="0dip"
-                    android:layout_height="0dip"
-                    android:background="@drawable/bg_round_white_8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <ImageView
-                    android:id="@+id/imgV_clb1"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dip"
-                    android:alpha=".75"
-                    android:background="#FEE897F7"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent" />
-
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="140dip"
-                    android:layout_below="@+id/imgV_clb1"
-                    android:background="@color/white">
+                    android:layout_height="350dp">
 
                     <TextView
-                        android:id="@+id/txtCollName1"
-                        android:layout_width="149dip"
-                        android:layout_height="30dip"
-                        android:layout_marginStart="15dip"
-                        android:layout_marginTop="10dip"
-                        android:paddingStart="5dip"
-                        android:text="Natvansh"
-                        android:textSize="21dip"
-                        android:textColor="@color/black"
-                        tools:ignore="RtlSymmetry" />
-
-                    <TextView
-                        android:id="@+id/txtCollCourseName1"
-                        android:layout_width="149dip"
-                        android:layout_height="35dip"
-                        android:paddingStart="5dip"
-                        android:text="Content creater"
-                        android:textSize="20dip"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:layout_below="@id/txtCollName1"
-                        android:layout_marginStart="15dip" />
-
-                    <TextView
-                        android:id="@+id/txtCollCourseDetail"
-                        android:layout_width="73dip"
+                        android:layout_width="60dip"
                         android:layout_height="25dip"
-                        android:paddingStart="5dip"
-                        android:text="ELIGIBLE"
-                        android:textColor="#33BF27"
-                        android:background="@drawable/round_green"
-                        android:textSize="15sp"
-                        android:paddingTop="2dip"
-                        android:layout_marginStart="180dip"
-                        android:layout_marginTop="42sp"
-                        tools:ignore="RtlSymmetry" />
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/see_all"
+                        android:textColor="@color/black"
+                        android:textSize="16dip"
+                        android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/txtCollCourseDescription"
-                        android:layout_width="240dip"
-                        android:layout_height="35dip"
-                        android:paddingStart="5dip"
-                        android:text="@string/content"
-                        android:textSize="15sp"
-                        android:layout_below="@id/txtCollCourseName1"
-                        android:layout_marginStart="15dip"
-                        tools:ignore="RtlSymmetry" />
+                    <RelativeLayout
+                        android:layout_width="300dip"
+                        android:layout_height="300dip"
+                        android:layout_marginStart="30dip"
+                        android:layout_marginTop="30dip"
+                        android:layout_marginEnd="8dip"
+                        android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/likeHeart1"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:layout_marginVertical="15dip"
+                            android:layout_marginEnd="8dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/btn_corner_radius"
+                            android:background="@drawable/heart" />
 
+                        <ImageView
+                            android:id="@+id/imgV_clb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dip"
+                            android:alpha=".75"
+                            android:background="@drawable/bg_round_pink"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dip"
+                            android:layout_below="@+id/imgV_clb1"
+                            android:background="@drawable/bg_round_white_20dp">
+
+                            <TextView
+                                android:id="@+id/txtCollName1"
+                                android:layout_width="149dip"
+                                android:layout_height="30dip"
+                                android:layout_marginStart="15dip"
+                                android:layout_marginTop="10dip"
+                                android:paddingStart="5dip"
+                                android:text="Natvansh"
+                                android:textColor="@color/black"
+                                android:textSize="21sp"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/txtCollCourseName1"
+                                android:layout_width="149dip"
+                                android:layout_height="35dip"
+                                android:layout_below="@id/txtCollName1"
+                                android:layout_marginStart="15dip"
+                                android:paddingStart="5dip"
+                                android:text="Content creater"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/txtCollCourseDetail"
+                                android:layout_width="73dip"
+                                android:layout_height="25dip"
+                                android:layout_marginStart="180dip"
+                                android:layout_marginTop="42sp"
+                                android:background="@drawable/round_green"
+                                android:paddingStart="5dip"
+                                android:paddingTop="2dip"
+                                android:text="ELIGIBLE"
+                                android:textColor="#33BF27"
+                                android:textSize="15sp"
+                                tools:ignore="RtlSymmetry" />
+
+                            <TextView
+                                android:id="@+id/txtCollCourseDescription"
+                                android:layout_width="240dip"
+                                android:layout_height="35dip"
+                                android:layout_below="@id/txtCollCourseName1"
+                                android:layout_marginStart="15dip"
+                                android:paddingStart="5dip"
+                                android:text="@string/content"
+                                android:textSize="15sp"
+                                tools:ignore="RtlSymmetry" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
                 </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="25dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="300dip"
+                    android:layout_height="300dip"
+                    android:layout_marginStart="30dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_marginEnd="8dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/likeHeart2"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_marginVertical="15dip"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/btn_corner_radius"
+                        android:background="@drawable/heart" />
+
+                    <ImageView
+                        android:id="@+id/imgV_clb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:alpha=".75"
+                        android:background="@drawable/bg_round_pink"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_below="@+id/imgV_clb2"
+                        android:background="@drawable/bg_round_white_20dp">
+
+                        <TextView
+                            android:id="@+id/txtCollName2"
+                            android:layout_width="149dip"
+                            android:layout_height="30dip"
+                            android:layout_marginStart="15dip"
+                            android:layout_marginTop="10dip"
+                            android:paddingStart="5dip"
+                            android:text="Natvansh"
+                            android:textColor="@color/black"
+                            android:textSize="21sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseName2"
+                            android:layout_width="149dip"
+                            android:layout_height="35dip"
+                            android:layout_below="@id/txtCollName2"
+                            android:layout_marginStart="15dip"
+                            android:paddingStart="5dip"
+                            android:text="Content creater"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseDetail2"
+                            android:layout_width="73dip"
+                            android:layout_height="25dip"
+                            android:layout_marginStart="180dip"
+                            android:layout_marginTop="42sp"
+                            android:background="@drawable/round_green"
+                            android:paddingStart="5dip"
+                            android:paddingTop="2dip"
+                            android:text="ELIGIBLE"
+                            android:textColor="#33BF27"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseDescription2"
+                            android:layout_width="240dip"
+                            android:layout_height="35dip"
+                            android:layout_below="@id/txtCollCourseName2"
+                            android:layout_marginStart="15dip"
+                            android:paddingStart="5dip"
+                            android:text="@string/content"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
             </RelativeLayout>
 
-            <TextView
-                android:layout_width="60dip"
-                android:layout_height="25dip"
-                android:layout_marginStart="338dip"
-                android:text="@string/see_all"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
             <RelativeLayout
-                android:layout_width="300dip"
-                android:layout_height="300dip"
-                android:layout_marginStart="30dip"
-                android:layout_marginTop="15dip"
-                android:layout_marginEnd="8dip"
-                android:background="@drawable/bg_shadow_8dp"
-                android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
 
-                <ImageView
-                    android:id="@+id/likeHeart1"
-                    android:layout_width="30dip"
-                    android:layout_height="30dip"
-                    android:layout_marginVertical="15dip"
-                    android:layout_marginStart="225dip"
-                    android:layout_marginTop="@dimen/btn_corner_radius"
-                    android:background="@drawable/heart" />
-
-                <View
-                    android:layout_width="0dip"
-                    android:layout_height="0dip"
-                    android:background="@drawable/bg_round_white_8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <ImageView
-                    android:id="@+id/imgV_clb2"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dip"
-                    android:alpha=".75"
-                    android:background="#FEE897F7"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent" />
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="25dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="140dip"
-                    android:layout_below="@+id/imgV_clb2"
-                    android:background="@color/white">
+                    android:layout_width="300dip"
+                    android:layout_height="300dip"
+                    android:layout_marginStart="30dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_marginEnd="8dip"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/txtCollName2"
-                        android:layout_width="149dip"
+                    <ImageView
+                        android:id="@+id/likeHeart3"
+                        android:layout_width="30dip"
                         android:layout_height="30dip"
-                        android:layout_marginStart="15dip"
-                        android:layout_marginTop="10dip"
-                        android:paddingStart="5dip"
-                        android:text="Natvansh"
-                        android:textColor="@color/black"
-                        android:textSize="21dip"
-                        tools:ignore="RtlSymmetry" />
+                        android:layout_marginVertical="15dip"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/btn_corner_radius"
+                        android:background="@drawable/heart" />
 
-                    <TextView
-                        android:id="@+id/txtCollCourseName2"
-                        android:layout_width="149dip"
-                        android:layout_height="35dip"
-                        android:paddingStart="5dip"
-                        android:text="Content creater"
-                        android:textSize="20dip"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:layout_below="@id/txtCollName2"
-                        android:layout_marginStart="15dip" />
+                    <ImageView
+                        android:id="@+id/imgV_clb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:alpha=".75"
+                        android:background="@drawable/bg_round_pink"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
 
-                    <TextView
-                        android:id="@+id/txtCollCourseDetail2"
-                        android:layout_width="73dip"
-                        android:layout_height="25dip"
-                        android:paddingStart="5dip"
-                        android:text="ELIGIBLE"
-                        android:textColor="#33BF27"
-                        android:background="@drawable/round_green"
-                        android:textSize="15sp"
-                        android:paddingTop="2dip"
-                        android:layout_marginStart="180dip"
-                        android:layout_marginTop="42sp"
-                        tools:ignore="RtlSymmetry" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_below="@+id/imgV_clb3"
+                        android:background="@drawable/bg_round_white_20dp">
 
-                    <TextView
-                        android:id="@+id/txtCollCourseDescription2"
-                        android:layout_width="240dip"
-                        android:layout_height="35dip"
-                        android:paddingStart="5dip"
-                        android:text="@string/content"
-                        android:textSize="15sp"
-                        android:layout_below="@id/txtCollCourseName2"
-                        android:layout_marginStart="15dip"
-                        tools:ignore="RtlSymmetry" />
+                        <TextView
+                            android:id="@+id/txtCollName3"
+                            android:layout_width="149dip"
+                            android:layout_height="30dip"
+                            android:layout_marginStart="15dip"
+                            android:layout_marginTop="10dip"
+                            android:paddingStart="5dip"
+                            android:text="Natvansh"
+                            android:textColor="@color/black"
+                            android:textSize="21sp"
+                            tools:ignore="RtlSymmetry" />
 
+                        <TextView
+                            android:id="@+id/txtCollCourseName3"
+                            android:layout_width="149dip"
+                            android:layout_height="35dip"
+                            android:layout_below="@id/txtCollName3"
+                            android:layout_marginStart="15dip"
+                            android:paddingStart="5dip"
+                            android:text="Content creater"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
+                        <TextView
+                            android:id="@+id/txtCollCourseDetail3"
+                            android:layout_width="73dip"
+                            android:layout_height="25dip"
+                            android:layout_marginStart="180dip"
+                            android:layout_marginTop="42sp"
+                            android:background="@drawable/round_green"
+                            android:paddingStart="5dip"
+                            android:paddingTop="2dip"
+                            android:text="ELIGIBLE"
+                            android:textColor="#33BF27"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseDescription3"
+                            android:layout_width="240dip"
+                            android:layout_height="35dip"
+                            android:layout_below="@id/txtCollCourseName3"
+                            android:layout_marginStart="15dip"
+                            android:paddingStart="5dip"
+                            android:text="@string/content"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+                    </RelativeLayout>
                 </RelativeLayout>
+            </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="25dip"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="300dip"
+                    android:layout_height="300dip"
+                    android:layout_marginStart="30dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_marginEnd="8dip"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/likeHeart4"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_marginVertical="15dip"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/btn_corner_radius"
+                        android:background="@drawable/heart" />
+
+
+
+
+                    <ImageView
+                        android:id="@+id/imgV_clb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dip"
+                        android:alpha=".75"
+                        android:background="@drawable/bg_round_pink"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dip"
+                        android:layout_below="@+id/imgV_clb4"
+                        android:background="@drawable/bg_round_white_20dp">
+
+                        <TextView
+                            android:id="@+id/txtCollName4"
+                            android:layout_width="149dip"
+                            android:layout_height="30dip"
+                            android:layout_marginStart="15dip"
+                            android:layout_marginTop="10dip"
+                            android:paddingStart="5dip"
+                            android:text="Natvansh"
+                            android:textColor="@color/black"
+                            android:textSize="21sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseName4"
+                            android:layout_width="149dip"
+                            android:layout_height="35dip"
+                            android:layout_below="@id/txtCollName4"
+                            android:layout_marginStart="15dip"
+                            android:paddingStart="5dip"
+                            android:text="Content creater"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseDetail4"
+                            android:layout_width="73dip"
+                            android:layout_height="25dip"
+                            android:layout_marginStart="180dip"
+                            android:layout_marginTop="42sp"
+                            android:background="@drawable/round_green"
+                            android:paddingStart="5dip"
+                            android:paddingTop="2dip"
+                            android:text="ELIGIBLE"
+                            android:textColor="#33BF27"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <TextView
+                            android:id="@+id/txtCollCourseDescription4"
+                            android:layout_width="240dip"
+                            android:layout_height="35dip"
+                            android:layout_below="@id/txtCollCourseName4"
+                            android:layout_marginStart="15dip"
+                            android:paddingStart="5dip"
+                            android:text="@string/content"
+                            android:textSize="15sp"
+                            tools:ignore="RtlSymmetry" />
+                    </RelativeLayout>
+                </RelativeLayout>
             </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
+
     <LinearLayout
-        android:layout_width="412dip"
-        android:layout_height="75dip"
-        android:layout_marginBottom="40dip"
+        android:id="@+id/CollNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
         android:background="#1E1E1E"
+        android:layout_below="@+id/CollContent"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnHome"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:paddingStart="30dip"
             android:layout_marginStart="15dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:paddingBottom="10dp"
+            android:textSize="26sp"
             app:icon="@drawable/home"
             app:iconTint="#FFFFFF"
             android:textStyle="bold"
@@ -279,12 +474,13 @@
 
         <Button
             android:id="@+id/btnWallet"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:paddingStart="30dip"
             android:layout_marginStart="17dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:icon="@drawable/wallet"
             app:iconTint="#FFFFFF"
@@ -293,34 +489,32 @@
 
         <Button
             android:id="@+id/btnAnalysis"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
-            android:paddingStart="30dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:layout_marginStart="17dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
+            android:paddingStart="30dip"
+            android:paddingBottom="10dp"
+            android:textSize="30sp"
             android:textStyle="bold"
-            android:visibility="visible"
             app:icon="@drawable/analysis"
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
-            tools:visibility="visible" />
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/btnProfile"
-            android:layout_width="80dip"
-            android:layout_height="75dip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dip"
             android:paddingStart="30dip"
+            android:paddingBottom="10dp"
             android:layout_marginStart="17dip"
-            android:layout_marginTop="-4dip"
-            android:textSize="30dip"
-            android:textStyle="bold"
+            android:textSize="30sp"
             app:icon="@drawable/person"
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
             style="?android:attr/buttonBarButtonStyle" />
 
-
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
