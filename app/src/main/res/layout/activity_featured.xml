@@ -16,87 +16,322 @@
         android:textStyle="bold"
         android:fontFamily="@font/adamina"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp" />
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-           <ImageView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-            android:background="circle_shape"/>
-        </LinearLayout>
-    </HorizontalScrollView>
+        android:layout_marginLeft="10dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_marginLeft="10dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Natvansh...{The Drama Club"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:layout_height="wrap_content"/>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                app:cardCornerRadius="8dp"
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginVertical="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginHorizontal="3dp"
+                        android:src="@drawable/circle_shape"
+                        android:scaleType="centerCrop"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Natvansh...{The Drama Club}"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_height="225dp">
+
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="225dp"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Header"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This Club is related to drama Society" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8m ago"
+                                android:textColor="@color/common_red"
+                                android:paddingTop="25dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"/>
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Natvansh...{The Drama Club"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_height="225dp">
+
+                            <ImageView
+                                android:layout_width="300dp"
+                                android:layout_height="225dp"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Header"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="This Club is related to drama Society" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8m ago"
+                                android:textColor="@color/common_red"
+                                android:paddingTop="25dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:layout_width="300dp"
-                    android:src="@drawable/square"
-                    android:scaleType="centerCrop"
-                    android:layout_height="225dp"/>
-
-            </androidx.cardview.widget.CardView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@color/black"
-                    android:maxHeight="20dp"
-                    android:maxWidth="30dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Header"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="This Club is related to drama Society" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="8m ago"
-                    android:textColor="@color/common_red"
-                    android:paddingTop="25dp"/>
-            </LinearLayout>
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mechandise IEEE Club"
+                            android:textColor="@color/common_gray" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item #1 Name \nGoes Here"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="200.20"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
 
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mechandise IEEE Club"
+                            android:textColor="@color/common_gray" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item #1 Name \nGoes Here"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="200.20"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mechandise IEEE Club"
+                            android:textColor="@color/common_gray" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Item #1 Name \nGoes Here"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="200.20"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
 
 
         </LinearLayout>
+
+
+
+
     </ScrollView>
+
 
 
 
