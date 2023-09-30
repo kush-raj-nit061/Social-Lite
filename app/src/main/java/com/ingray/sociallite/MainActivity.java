@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         tv4 = findViewById(R.id.tv_go4);
         tv5 = findViewById(R.id.tv_go5);
         tv6 = findViewById(R.id.tv_go6);
+        tv7 = findViewById(R.id.tv_go7);
+        tv8 = findViewById(R.id.tv_go8);
     }
 
     private void callOnClickListeners() {
@@ -85,6 +87,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, NotificationsActivity.class);
+                startActivity(i);
+
+            }
+        });
+        tv7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, PostActivity.class);
+                startActivity(i);
+
+            }
+        });
+        tv8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MessageActivity.class);
                 startActivity(i);
 
             }
