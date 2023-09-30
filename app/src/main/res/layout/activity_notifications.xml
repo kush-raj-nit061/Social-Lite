@@ -728,6 +728,5 @@
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
             style="?android:attr/buttonBarButtonStyle" />
-
     </LinearLayout>
 </RelativeLayout>
