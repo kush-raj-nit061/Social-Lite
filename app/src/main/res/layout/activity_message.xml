@@ -208,13 +208,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile1"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -225,8 +228,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile1"
+                        android:id="@+id/tvName1"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -252,8 +255,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName1"
+                        android:layout_toRightOf="@id/ivPofile1"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -264,13 +267,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile2"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -281,8 +287,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile2"
+                        android:id="@+id/tvName2"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -308,8 +314,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName2"
+                        android:layout_toRightOf="@id/ivPofile2"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -320,13 +326,15 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile3"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -337,8 +345,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile3"
+                        android:id="@+id/tvName3"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -364,8 +372,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName3"
+                        android:layout_toRightOf="@id/ivPofile3"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -376,13 +384,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile4"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -393,8 +404,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile4"
+                        android:id="@+id/tvName4"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -420,8 +431,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName4"
+                        android:layout_toRightOf="@id/ivPofile4"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -432,13 +443,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile5"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -449,8 +463,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile5"
+                        android:id="@+id/tvName5"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -476,8 +490,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName5"
+                        android:layout_toRightOf="@id/ivPofile5"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -488,13 +502,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile6"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -505,8 +522,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile6"
+                        android:id="@+id/tvName6"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -532,8 +549,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName6"
+                        android:layout_toRightOf="@id/ivPofile6"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -544,13 +561,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile7"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -561,8 +581,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile7"
+                        android:id="@+id/tvName7"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -588,8 +608,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName7"
+                        android:layout_toRightOf="@id/ivPofile7"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -600,13 +620,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile8"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -617,8 +640,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile8"
+                        android:id="@+id/tvName8"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -644,8 +667,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName8"
+                        android:layout_toRightOf="@id/ivPofile8"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -656,13 +679,15 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile9"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -673,8 +698,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile9"
+                        android:id="@+id/tvName9"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -700,8 +725,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName9"
+                        android:layout_toRightOf="@id/ivPofile9"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
@@ -712,13 +737,16 @@
 
 
 
-                </RelativeLayout><RelativeLayout
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="5dp">
 
                     <ImageView
-                        android:id="@+id/ivPofile"
+                        android:id="@+id/ivPofile10"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
                         android:layout_marginHorizontal="10dp"
@@ -729,8 +757,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/ivPofile"
-                        android:id="@+id/tvName"
+                        android:layout_toRightOf="@id/ivPofile10"
+                        android:id="@+id/tvName10"
                         android:text="Profile_Name"
                         android:textColor="@color/white"
                         android:layout_marginTop="15dp"
@@ -756,8 +784,8 @@
                         android:text="Last_Message"
                         android:textColor="#7F7F9C"
                         android:textStyle="bold"
-                        android:layout_below="@id/tvName"
-                        android:layout_toRightOf="@id/ivPofile"
+                        android:layout_below="@id/tvName10"
+                        android:layout_toRightOf="@id/ivPofile10"
                         android:textSize="12sp"
                         android:layout_marginTop="5dp"
                         android:background="@null"
