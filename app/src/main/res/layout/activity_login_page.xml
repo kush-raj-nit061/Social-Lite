@@ -11,12 +11,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@drawable/login_background"
             android:orientation="vertical"
             android:paddingBottom="40dp">
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="8dp"
-            android:background="@color/theme"
+
             android:layout_marginTop="60dp"
             android:textAlignment="center"
             android:textDirection="ltr"
@@ -73,7 +73,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/theme"
             android:text="or"
             android:textStyle="bold"
             android:textSize="20dp"
@@ -88,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="30dp"
-            android:background="@color/theme"
+
             android:layout_marginTop="30dp"
             android:textAlignment="center"
             android:textDirection="ltr"
@@ -109,7 +108,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="25dp"
-            android:background="@color/theme"
             android:layout_marginTop="30dp"
             android:textAlignment="center"
             android:textDirection="ltr"
@@ -148,13 +146,13 @@
             android:textStyle="bold"/>
         <androidx.cardview.widget.CardView
             android:layout_marginHorizontal="75dp"
-            app:cardElevation="30dp"
+            app:cardElevation="10dp"
             app:cardCornerRadius="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="25dp"
             android:background="@color/theme"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="200dp"
             android:textAlignment="center"
             android:textDirection="ltr"
             >
