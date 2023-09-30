@@ -11,7 +11,7 @@
     <LinearLayout
         android:id="@+id/collHead"
         android:layout_width="match_parent"
-        android:layout_height="80dip"
+        android:layout_height="70dip"
         android:orientation="horizontal">
 
     <TextView
@@ -19,7 +19,7 @@
         android:layout_width="345sp"
         android:layout_height="50sp"
         android:layout_marginStart="25dip"
-        android:layout_marginTop="35dip"
+        android:layout_marginTop="30dip"
         android:fontFamily="@font/inika"
         android:text="Your Collaboration"
         android:textColor="@color/common_gray"
