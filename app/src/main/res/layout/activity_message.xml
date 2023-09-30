@@ -8,7 +8,8 @@
     android:background="@color/theme">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:id="@+id/rlStatus">
 
         <ImageView
             android:id="@+id/message"
@@ -120,11 +121,13 @@
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
+        android:id="@+id/tvMessage"
         android:layout_height="wrap_content"
+        android:layout_below="@id/rlStatus"
         android:text="Messages"
         android:textSize="27sp"
         android:textColor="@color/black"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="0dp"
         android:textStyle="bold"
         android:layout_marginHorizontal="10dp">
 
@@ -132,9 +135,10 @@
 
     </TextView>
     <androidx.cardview.widget.CardView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="270dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/tvMessage"
         android:layout_marginHorizontal="10dp"
 
         >
@@ -144,21 +148,632 @@
             android:layout_height="match_parent"
             android:background="@color/black"
             >
-            <RelativeLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <ImageView
-                    android:id="@+id/profile"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:background="@drawable/circle"
-                    android:layout_marginTop="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
 
-                </ImageView>
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
 
 
-            </RelativeLayout>
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout><RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
 
 
 
