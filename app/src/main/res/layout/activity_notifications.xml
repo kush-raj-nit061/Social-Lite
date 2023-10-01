@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/NotiHead"
         android:layout_width="match_parent"
-        android:layout_height="150dip"
+        android:layout_height="130dip"
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:gravity="center_horizontal"
-            android:layout_marginTop="55sp"
+            android:layout_marginTop="45sp"
             android:fontFamily="cursive"
             android:text="@string/notifications"
             android:textColor="@color/common_gray"
