@@ -61,14 +61,41 @@
             android:textAlignment="center"
             android:textDirection="ltr"
             >
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
+                android:id="@+id/rlContinue"
                 android:background="@drawable/continuebutton_bg"
                 android:layout_height="60dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/ivGoogle"
+                    android:layout_height="30dp"
+                    android:background="@drawable/google"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="20dp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="54dp"
+                    android:layout_toRightOf="@id/ivGoogle"
+                    android:text="continue with google"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold">
+
+                </TextView>
 
 
 
-            </LinearLayout>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <TextView
             android:layout_width="wrap_content"
@@ -97,6 +124,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:background="@drawable/continuebutton_bg">
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="@color/black"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@null"
+                    android:layout_marginTop="15dp">
+
+                </EditText>
 
 
             </LinearLayout>
@@ -112,14 +149,34 @@
             android:textAlignment="center"
             android:textDirection="ltr"
             >
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:background="@drawable/continuebutton_bg"
                 android:layout_height="60dp">
+                <EditText
+                    android:layout_width="220dp"
+                    android:id="@+id/evPassword"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textColorHint="@color/black"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@null"
+                    android:layout_marginTop="15dp">
+
+                </EditText>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/eye_closed"
+                    android:layout_toRightOf="@id/evPassword"
+                    android:layout_marginTop="15dp"
+                    >
+
+                </ImageView>
 
 
 
-            </LinearLayout>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
 
@@ -156,15 +213,23 @@
             android:textAlignment="center"
             android:textDirection="ltr"
             >
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:background="@color/black"
+                android:id="@+id/rlLogin"
 
                 android:layout_height="60dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
 
-
-            </LinearLayout>
+                    ></TextView>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
 
