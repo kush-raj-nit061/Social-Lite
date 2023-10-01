@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/NotiHead"
         android:layout_width="match_parent"
-        android:layout_height="130dip"
+        android:layout_height="120dip"
         android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
@@ -41,7 +41,7 @@
             android:layout_marginStart="10dip"
             android:layout_marginEnd="10dip"
             android:layout_marginTop="7dp"
-            android:layout_marginBottom="99dip"
+            android:layout_marginBottom="85dip"
             android:background="@drawable/shades_of_green">
 
             <LinearLayout
