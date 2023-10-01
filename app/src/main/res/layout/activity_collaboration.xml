@@ -16,7 +16,7 @@
 
     <TextView
         android:id="@+id/txtCollaboration"
-        android:layout_width="345sp"
+        android:layout_width="match_parent"
         android:layout_height="50sp"
         android:layout_marginStart="25dip"
         android:layout_marginTop="30dip"
