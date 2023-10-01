@@ -41,8 +41,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
-                android:padding="40dp"
-                android:src="@drawable/man"/>
+                android:padding="20dp"
+                android:src="@drawable/welcome_backgr"/>
 
 
 
@@ -53,6 +53,7 @@
             android:layout_height="wrap_content"
             android:text="Welcome"
             android:textSize="60dp"
+            android:fontFamily="@font/poppins"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:layout_marginTop="30dp"
@@ -63,14 +64,14 @@
 
             />
         <androidx.cardview.widget.CardView
-            android:layout_marginHorizontal="75dp"
+            android:layout_marginHorizontal="55dp"
             app:cardElevation="10dp"
-            app:cardCornerRadius="20dp"
+            app:cardCornerRadius="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:elevation="25dp"
             android:background="@color/theme"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:textAlignment="center"
             android:textDirection="ltr"
             >
@@ -94,12 +95,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_marginHorizontal="75dp"
-            app:cardElevation="30dp"
-            app:cardCornerRadius="20dp"
+            android:layout_marginHorizontal="55dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="25dp"
+            android:elevation="15dp"
             android:background="@color/theme"
             android:layout_marginTop="24dp"
             android:textAlignment="center"
