@@ -1,9 +1,823 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MessageActivity">
+    tools:context=".MessageActivity"
+    android:background="@color/theme">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlStatus">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/message"
+            android:layout_width="25dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/message">
+
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/message_text"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="27sp"
+            android:layout_marginHorizontal="45dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/msgbar"
+            android:layout_marginTop="33dp"
+            />
+        <ImageView
+            android:layout_marginEnd="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@+id/search"
+            android:background="@drawable/magnifying_glass"
+            android:layout_marginTop="30dp"
+            />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@id/message"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingHorizontal="10dp"
+                android:orientation="horizontal"
+                android:layout_height="70dp"
+                >
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/round"
+                    android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/><ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/round"
+                android:layout_marginRight="10dp"/>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvMessage"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlStatus"
+        android:text="Messages"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="0dp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="10dp">
+
+
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginHorizontal="10dp"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:id="@+id/tvName"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName"
+                        android:layout_toRightOf="@id/ivPofile"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile1"
+                        android:id="@+id/tvName1"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName1"
+                        android:layout_toRightOf="@id/ivPofile1"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile2"
+                        android:id="@+id/tvName2"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName2"
+                        android:layout_toRightOf="@id/ivPofile2"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile3"
+                        android:id="@+id/tvName3"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName3"
+                        android:layout_toRightOf="@id/ivPofile3"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile4"
+                        android:id="@+id/tvName4"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName4"
+                        android:layout_toRightOf="@id/ivPofile4"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile5"
+                        android:id="@+id/tvName5"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName5"
+                        android:layout_toRightOf="@id/ivPofile5"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile6"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile6"
+                        android:id="@+id/tvName6"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName6"
+                        android:layout_toRightOf="@id/ivPofile6"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile7"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile7"
+                        android:id="@+id/tvName7"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName7"
+                        android:layout_toRightOf="@id/ivPofile7"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile8"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile8"
+                        android:id="@+id/tvName8"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName8"
+                        android:layout_toRightOf="@id/ivPofile8"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile9"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile9"
+                        android:id="@+id/tvName9"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName9"
+                        android:layout_toRightOf="@id/ivPofile9"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivPofile10"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:background="@drawable/circle"
+                        >
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/ivPofile10"
+                        android:id="@+id/tvName10"
+                        android:text="Profile_Name"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="15dp"
+                        android:textSize="15sp"
+                        android:background="@null"
+
+                        >
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/rec"
+
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last_Message"
+                        android:textColor="#7F7F9C"
+                        android:textStyle="bold"
+                        android:layout_below="@id/tvName10"
+                        android:layout_toRightOf="@id/ivPofile10"
+                        android:textSize="12sp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        >
+
+                    </TextView>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

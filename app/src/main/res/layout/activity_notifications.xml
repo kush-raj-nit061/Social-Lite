@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,16 +8,17 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/NotiHead"
         android:layout_width="match_parent"
         android:layout_height="150dip"
+        android:layout_alignParentTop="true"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/txtNotifications"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:layout_marginStart="80dip"
-            android:layout_marginEnd="80dip"
+            android:gravity="center_horizontal"
             android:layout_marginTop="55sp"
             android:fontFamily="cursive"
             android:text="@string/notifications"
@@ -30,16 +31,17 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="620dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NotiHead"
         android:orientation="vertical">
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="35dip"
-            android:layout_marginEnd="35dip"
+            android:layout_marginStart="10dip"
+            android:layout_marginEnd="10dip"
             android:layout_marginTop="7dp"
-            android:layout_marginBottom="40dip"
+            android:layout_marginBottom="99dip"
             android:background="@drawable/shades_of_green">
 
             <LinearLayout
@@ -47,34 +49,39 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
 
-                    <ImageView
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView1"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/man" />
+                        android:src="@drawable/man"/>
 
                     <LinearLayout
-                        android:layout_width="230dip"
+                        android:id="@+id/txtNotiContent"
+                        android:layout_width="match_parent"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView1"
+                        android:layout_marginEnd="60dp"
                         android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txtNotiMessage1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dip"
-                        android:layout_marginTop="15dip"
-                        android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
-                        android:textColor="#FF000000"
-                        android:textStyle="bold|italic"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dip"
+                            android:layout_marginTop="15dip"
+                            android:text="Lorem ipsum dolor sit amet, consec adipiscing elit"
+                            android:textColor="#FF000000"
+                            android:textStyle="bold|italic" />
 
                         <TextView
                             android:id="@+id/txtTimeAgo1"
@@ -92,11 +99,11 @@
 
                     <TextView
                         android:id="@+id/txtRedNot1"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
@@ -105,22 +112,25 @@
                         android:textSize="10sp"
                         tools:ignore="SmallSp" />
 
-                </LinearLayout>
-                <LinearLayout
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView2"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/woman" />
+                        android:src="@drawable/woman"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
+                        android:layout_toRightOf="@+id/imageView2"
                         android:layout_marginTop="12dip"
                         android:orientation="vertical">
 
@@ -151,35 +161,39 @@
 
                     <TextView
                         android:id="@+id/txtRedNot2"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
-                <LinearLayout
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView3"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/man" />
+                        android:src="@drawable/man"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView3"
                         android:orientation="vertical">
 
                         <TextView
@@ -208,37 +222,39 @@
 
                     <TextView
                         android:id="@+id/txtRedNot3"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
+                        tools:ignore="SmallSp"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView4"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/woman" />
+                        android:src="@drawable/woman"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView4"
                         android:orientation="vertical">
 
                         <TextView
@@ -266,36 +282,38 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtRedNot4"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView5"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/man" />
+                        android:src="@drawable/man"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView5"
                         android:orientation="vertical">
 
                         <TextView
@@ -323,36 +341,38 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtRedNot5"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView6"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/woman" />
+                        android:src="@drawable/woman"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView6"
                         android:orientation="vertical">
 
                         <TextView
@@ -380,37 +400,39 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtRedNot6"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView7"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/man" />
+                        android:src="@drawable/man"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView7"
                         android:orientation="vertical">
 
                         <TextView
@@ -440,37 +462,39 @@
 
                     <TextView
                         android:id="@+id/txtRedNot7"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
+                        tools:ignore="SmallSp"/>
 
-                </LinearLayout>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView8"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/woman" />
+                        android:src="@drawable/woman"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView8"
                         android:orientation="vertical">
 
                         <TextView
@@ -500,36 +524,38 @@
 
                     <TextView
                         android:id="@+id/txtRedNot8"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageView9"
                         android:layout_width="70dip"
                         android:layout_height="70dip"
+                        android:alpha="1"
                         android:layout_marginStart="8dip"
                         android:layout_marginTop="18dip"
-                        android:background="@drawable/man" />
+                        android:src="@drawable/man"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView9"
                         android:orientation="vertical">
 
                         <TextView
@@ -558,36 +584,38 @@
 
                     <TextView
                         android:id="@+id/txtRedNot9"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="108dip"
                     android:orientation="horizontal">
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="70dip"
-                        android:layout_height="70dip"
-                        android:layout_marginStart="8dip"
-                        android:layout_marginTop="18dip"
-                        android:background="@drawable/woman" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="70dip"
+                    android:layout_height="70dip"
+                        android:alpha="1"
+                    android:layout_marginStart="8dip"
+                    android:layout_marginTop="18dip"
+                    android:src="@drawable/woman"/>
 
                     <LinearLayout
                         android:layout_width="230dip"
                         android:layout_height="80dip"
                         android:layout_marginTop="12dip"
+                        android:layout_toRightOf="@+id/imageView10"
                         android:orientation="vertical">
 
                         <TextView
@@ -615,20 +643,19 @@
                     </LinearLayout>
                     <TextView
                         android:id="@+id/txtRedNot10"
-                        android:layout_width="0dip"
+                        android:layout_width="18dip"
                         android:layout_height="18dip"
                         android:layout_marginTop="55dip"
-                        android:layout_marginEnd="15dip"
-                        android:layout_weight="1"
+                        android:layout_marginEnd="20dip"
+                        android:layout_alignParentEnd="true"
                         android:background="@drawable/bg_round_red_8dp"
                         android:paddingStart="6dip"
                         android:paddingTop="1.9dip"
                         android:text="2"
                         android:textColor="@color/white"
                         android:textSize="10sp"
-                        tools:ignore="SmallSp" />
-                </LinearLayout>
-
+                        tools:ignore="SmallSp"/>
+                </RelativeLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
@@ -638,6 +665,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dip"
         android:background="#1E1E1E"
+        android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
         <Button
@@ -699,6 +727,5 @@
             app:iconTint="#FFFFFF"
             tools:ignore="MissingConstraints,RtlSymmetry"
             style="?android:attr/buttonBarButtonStyle" />
-
     </LinearLayout>
-</LinearLayout>
+</RelativeLayout>
